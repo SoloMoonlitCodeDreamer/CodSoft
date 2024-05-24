@@ -90,5 +90,46 @@ STUDENT MANAGEMENT SYSTEM
 INTRODUCTION 
 
 STRUCTURE
+This project has 3 classes:
+1. Main class
+2. Student class
+3. StudentManagement class
+
 CLASSES 
+    -Main Class 
+      -This is the entry point of the application. It contains the main method which starts the StudentManagementSystem and gives the main menu for user interaction.
+          -Methods
+            1.main(String[] args): The main method that runs the application.
+            2.addStudentDialog(StudentManagementSystem sms): Prompts the user to enter details for a new student and adds the student to the system.
+            3.removeStudentDialog(StudentManagementSystem sms): Prompts the user to enter the enrollment number of the student to be removed.
+            4.searchStudentDialog(StudentManagementSystem sms): Prompts the user to enter the enrollment number of the student to search for.
+    -Student Class
+      -This class represents a student with characteristics such as name, surname, gender, age, enrollment number, and course name.
+        -Characteristics
+          *String name
+          *String surname
+          *String gender
+          *int age
+          *String enrollmentNumber
+          *String courseName
+            -Methods
+              -Getters and setters for each characteristic.
+              -toString(): Returns a string representation of the student object.
+    -StudentManagement class
+      -This class manages the collection of students. It provides methods to add, remove, search, and display students.
+        -Attributes
+          1.List<Student> students: A list to store student objects.
+        -Methods
+          1.addStudent(Student student): Adds a student to the list.
+          2.removeStudent(String enrollmentNumber): Removes a student from the list usin the enrollment number.
+          3.searchStudent(String enrollmentNumber): Searches for a student using enrollment number.
+          4.displayAllStudents(): Displays all students in the list.
+          5.getStudentCount(): Returns the total number of students in the list.
 RUN THE APPLICATION
+  -Run the Main class to start the application.
+  -A GUI will appear with options to:
+    1.Add Student
+    2.Remove Student
+    3.Search Student
+    4.Display All Students
+    5.Exit
